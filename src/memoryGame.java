@@ -19,9 +19,23 @@ public class memoryGame {
 		{
 			System.out.print(numbers[i]);
 		}
-		
-		
+		try { 
 
+			// The pause will last 1 second
+			 Thread.sleep(1000); 
+
+			} 
+
+			catch(InterruptedException ex) 
+
+			{ 
+
+			Thread.currentThread().interrupt();
+
+			}
+		
+		
+		
 	}
 
 }

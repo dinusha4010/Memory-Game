@@ -17,12 +17,8 @@ public class memoryGame {
 		{
 			numbers[i]=random.nextInt(5)+1;
 		}
+		PrintArray( numbers);
 		
-		for (int i=0;i<7;i++)
-			
-		{
-			System.out.print(numbers[i]);
-		}
 		try { 
 
 			// The pause will last 1 second

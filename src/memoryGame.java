@@ -7,6 +7,7 @@ public class memoryGame {
 		
 		Random random=new Random();
 		Scanner in= new Scanner(System.in);
+		int correct=0;
 		
 		int[] numbers=new int[7];
 		int[] userInput=new int[7];
@@ -62,6 +63,18 @@ public class memoryGame {
 					
 					System.out.print(userInput[j]);
 			}
+			
+			for (int j=0; j<7;j++)
+				
+				if (userInput[j]==numbers[j])
+				{
+					correct++;
+				}
+			System.out.println();	
+			System.out.println("Number of correct answers is: "+ correct);
+			System.out.println("Correction precentage is :"+(correct*100/7)+"%");
+			
+				
 	}
 	
 

@@ -49,20 +49,13 @@ public class memoryGame {
 		}
 		
 			System.out.println("The numbers were:");
-			for (int j=0;j<7;j++)
-			
-		{
-				System.out.print(numbers[j]);
-				
-		}
+			PrintArray( numbers);
 			System.out.println();
 			System.out.println("Your numbers were:");
-			for (int j=0;j<7;j++)
+			PrintArray( userInput);
+			
 				
-			{
-					
-					System.out.print(userInput[j]);
-			}
+		
 			
 			for (int j=0; j<7;j++)
 				
@@ -77,6 +70,16 @@ public class memoryGame {
 				
 	}
 	
-
+	public static void PrintArray( int x[])
+	
+	{
+				for (int j=0;j<7;j++)
+			
+		{
+				System.out.print(x[j]);
+				
+		}
+	}
+	
 	
 }
